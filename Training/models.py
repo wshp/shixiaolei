@@ -8,5 +8,5 @@ class Post(models.Model):
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now())
 
-class SA():
+class SA(models.Model):
     pass
