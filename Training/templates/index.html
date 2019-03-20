@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+{% for post in posts %}
+    <a href="{% url 'post_list' post.id %}">{{ post.title }}</a>
+    <p>{{ post.publish|date:'Y-m-d H:i:s' }}</p>
+{% endfor %}
+<a href="{% url 'post_create' %}">新增一篇文章</a>
+
+</body>
+</html>

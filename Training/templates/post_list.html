@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+</head>
+<body>
+<h4>{{ post.title }}</h4>
+<h5>{{ post.body }}</h5>
+<p><a href="{% url 'post_delete' post.id %}">删除该文章</a></p>
+<p><a href="{% url 'post_update' post.id %}">修改该文章</a></p>
+</body>
+</html>
