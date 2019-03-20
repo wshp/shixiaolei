@@ -6,3 +6,5 @@ class PostForm(ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'body')
+class s:
+    pass
